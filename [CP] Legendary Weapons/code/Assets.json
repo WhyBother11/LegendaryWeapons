@@ -1,0 +1,28 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Stun Animation",
+            "Action": "Load",
+            "Target": "Mods/WhyBother11.CombatExtended/Animations/Stun",
+            "FromFile": "assets/animations/stun.png"
+        },
+        {
+            "LogName": "Load Summon Rain Animation",
+            "Action": "Load",
+            "Target": "Mods/WhyBother11.CombatExtended/Animations/SummonRain",
+            "FromFile": "assets/animations/summon_rain.png"
+        },
+        {
+            "LogName": "Load Grim Reaper Tiles",
+            "Action": "Load",
+            "Target": "Mods/WhyBother11.CombatExtended/Tiles/GrimReaper",
+            "FromFile": "assets/animations/grim_reaper.png"
+        },
+        {
+            "LogName": "Load Lightning Projectile Animation",
+            "Action": "Load",
+            "Target": "Mods/{{ModID}}/Animations/LightningProjectile",
+            "FromFile": "assets/animations/lightning_projectile.png"
+        }
+    ]
+}

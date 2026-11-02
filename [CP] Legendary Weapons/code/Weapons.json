@@ -1,0 +1,81 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Weapon Assets",
+            "Action": "Load",
+            "Target": "Mods/{{ModID}}/weapons",
+            "FromFile": "assets/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Add Weapons",
+            "Action": "EditData",
+            "Target": "Data/Weapons",
+            "Entries": {
+                "{{ModID}}_Mjolnir": {
+                    "Name": "{{ModID}}_Mjolnir",
+                    "DisplayName": "{{i18n:weapon.mjolnir.display-name}}",
+                    "Description": "{{i18n:weapon.mjolnir.description}}",
+                    "Type": 2,
+                    "MinDamage": 55,
+                    "MaxDamage": 65,
+                    "Knockback": 1.4,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "Mods/{{ModID}}/weapons",
+                    "SpriteIndex": 0,                  
+                },
+                "{{ModID}}_MjolnirAwakened": {
+                    "Name": "{{ModID}}_MjolnirAwakened",
+                    "DisplayName": "{{i18n:weapon.mjolnir-awakened.display-name}}",
+                    "Description": "{{i18n:weapon.mjolnir-awakened.description}}",
+                    "Type": 2,
+                    "MinDamage": 70,
+                    "MaxDamage": 80,
+                    "Knockback": 1.5,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "Mods/{{ModID}}/weapons",
+                    "SpriteIndex": 1,                 
+                },
+                "{{ModID}}_CrimsonDagger": {
+                    "Name": "{{ModID}}_CrimsonDagger",
+                    "DisplayName": "{{i18n:weapon.crimson-dagger.display-name}}",
+                    "Description": "{{i18n:weapon.crimson-dagger.description}}",
+                    "Type": 1,
+                    "MinDamage": 25,
+                    "MaxDamage": 30,
+                    "Speed": 2,
+                    "CritChance": 0.15,
+                    "CritMultiplier": 3,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "Mods/{{ModID}}/weapons",
+                    "SpriteIndex": 2
+                },
+                "{{ModID}}_CrimsonDaggerUltimate": {
+                    "Name": "{{ModID}}_CrimsonDaggerUltimate",
+                    "DisplayName": "{{i18n:weapon.crimson-dagger-ultimate.display-name}}",
+                    "Description": "{{i18n:weapon.crimson-dagger-ultimate.description}}",
+                    "Type": 1,
+                    "MinDamage": 35,
+                    "MaxDamage": 40,
+                    "Speed": 2,
+                    "CritChance": 0.25,
+                    "CritMultiplier": 4,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "Mods/{{ModID}}/weapons",
+                    "SpriteIndex": 3
+                },
+                "{{ModID}}_ElementalBlade": {
+                    "Name": "{{ModID}}_ElementalBlade",
+                    "DisplayName": "{{i18n:weapon.elemental-blade.display-name}}",
+                    "Description": "{{i18n:weapon.elemental-blade.description}}",
+                    "Type": 3,
+                    "MinDamage": 60,
+                    "MaxDamage": 70,
+                    "Speed": 3,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "Mods/{{ModID}}/weapons",
+                    "SpriteIndex": 4
+                }
+            }
+        }
+    ]
+}

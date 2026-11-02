@@ -1,0 +1,58 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Range Data",
+            "Action": "EditData",
+            "Target": "Mods/WhyBother11.CombatExtended/Ranges",
+            "Entries": {
+                "{{ModID}}_SummonRainAbilityRange": {
+                    "Tiles": [
+                        {
+                            "Type": "Add",
+                            "RelativeTo": "cursor",
+                            "Rectangles": [
+                                {
+                                    "From": { "X": -1, "Y": -2 },
+                                    "To": { "X": 1, "Y": -2 }
+                                },
+                                {
+                                    "From": { "X": -2, "Y": -1 },
+                                    "To": { "X": 2, "Y": 1 }
+                                },
+                                {
+                                    "From": { "X": -1, "Y": 2 },
+                                    "To": { "X": 1, "Y": 2 }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "{{ModID}}_CallLightningRange": {
+                    "Tiles": [
+                        {
+                            "Type": "Add",
+                            "RelativeTo": "player",
+                            "CursorLines": [
+                                { "Width": 3 }
+                            ]
+                        }
+                    ]
+                },
+                "{{ModID}}_FireDebuffSpreadingRange": {
+                    "Tiles": [
+                        {
+                            "Type": "Add",
+                            "RelativeTo": "special",
+                            "Rectangles": [
+                                {
+                                    "From": { "X": -2, "Y": -2 },
+                                    "To": { "X": 2, "Y": 2 }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

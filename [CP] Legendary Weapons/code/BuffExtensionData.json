@@ -1,0 +1,21 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Buff Extensions",
+            "Action": "EditData",
+            "Target": "Mods/WhyBother11.CombatExtended/BuffExtensionData",
+            "Entries": {
+                "{{ModID}}_CrimsonDaggerBuff": {
+                    "StackableData": {
+                        "MaxStacks": 15,
+                        "IndependentStacks": true,
+                        "AttributesPerStack": {
+                            "CriticalChanceMultiplier": 0.02,
+                            "CriticalPowerMultiplier": 0.075
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

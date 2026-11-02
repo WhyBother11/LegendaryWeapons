@@ -1,0 +1,84 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Weapon Extensions",
+            "Action": "EditData",
+            "Target": "Mods/WhyBother11.CombatExtended/WeaponExtensionData",
+            "Entries": {
+                "{{ModID}}_Mjolnir": {
+                    "Abilities": "{{ModID}}_ThrowMjolnir {{ModID}}_MjolnirCallLightning",
+                    "ActionPoints": "{{ModID}}_MjolnirActionPoint {{ModID}}_MjolnirActionPointA {{ModID}}_MjolnirActionPointB {{ModID}}_MjolnirActionPointC {{ModID}}_MjolnirActionPointD {{ModID}}_MjolnirActionPointE",
+                    "DamageTypes": [
+                        {
+                            "Type": "Lightning",
+                            "MinDamage": 10,
+                            "MaxDamage": 15
+                        }
+                    ]
+                },
+                "{{ModID}}_MjolnirAwakened": {
+                    //"Abilities": "{{ModID}}_ThrowMjolnirAwakened {{ModID}}_MjolnirSummonRain {{ModID}}_MjolnirAwakenedCallLightning {{ModID}}_ThrowMjolnir {{ModID}}_MjolnirCallLightning {{ModID}}_CrimsonDaggerUnleashed {{ModID}}_CrimsonDaggerUltimateUnleashed {{ModID}}_ActivateElementalBladeForm {{ModID}}_ElementalBladeFireForm {{ModID}}_ElementalBladeIceForm {{ModID}}_ElementalBladeLightningForm",
+                    "Abilities": "{{ModID}}_ThrowMjolnirAwakened {{ModID}}_MjolnirSummonRain {{ModID}}_MjolnirAwakenedCallLightning",
+                    "ActionPoints": "{{ModID}}_MjolnirAwakenedActionPoint",
+                    "DamageTypes": [
+                        {
+                            "Type": "Lightning",
+                            "MinDamage": 25,
+                            "MaxDamage": 30
+                        }
+                    ]
+                },
+                "{{ModId}}_CrimsonDagger": {
+                    "Abilities": "{{ModID}}_CrimsonDaggerUnleashed"
+                },
+                "{{ModId}}_CrimsonDaggerUltimate": {
+                    "Abilities": "{{ModID}}_CrimsonDaggerUnleashed {{ModID}}_BleedingCuts"
+                },
+                "{{ModId}}_ElementalBlade": {
+                    "Abilities": "{{ModID}}_ActivateElementalBladeForm",
+                    "States": {
+                        "FireForm": {
+                            "Id": "FireForm",
+                            "MinDamage": 30,
+                            "MaxDamage": 40,
+                            "SpriteIndex": 5,
+                            "DamageTypes": [
+                                {
+                                    "Type": "Fire",
+                                    "MinDamage": 30,
+                                    "MaxDamage": 40
+                                }
+                            ]
+                        },
+                        "IceForm": {
+                            "Id": "IceForm",
+                            "MinDamage": 30,
+                            "MaxDamage": 40,
+                            "SpriteIndex": 6,
+                            "DamageTypes": [
+                                {
+                                    "Type": "Ice",
+                                    "MinDamage": 30,
+                                    "MaxDamage": 40
+                                }
+                            ]
+                        },
+                        "LightningForm": {
+                            "Id": "LightningForm",
+                            "MinDamage": 30,
+                            "MaxDamage": 40,
+                            "SpriteIndex": 7,
+                            "DamageTypes": [
+                                {
+                                    "Type": "Lightning",
+                                    "MinDamage": 30,
+                                    "MaxDamage": 40
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

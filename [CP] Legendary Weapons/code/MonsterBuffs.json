@@ -1,0 +1,88 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Monster Buffs",
+            "Action": "EditData",
+            "Target": "Mods/WhyBother11.CombatExtended/MonsterBuffs",
+            "Entries": {
+                "{{ModID}}_Shocked": {
+                    "Type": "Default",
+                    "DisplayName": "{{i18n:monster-buff.shocked.display-name}}",
+                    "Description": "{{i18n:monster-buff.shocked.description}}",
+                    "DoEffectEverySec": 1.5,
+                    "Duration": 4,
+                    "IsDebuff": "true",
+                    "Attributes": {
+                        "StunTime": -2,
+                        "ArmourClass": -2,
+                        "DamageData": [
+                            { "DamageType": "Lightning", "Damage": 10 }
+                        ]
+                    },
+                    "Effects": {
+                        "DamageData": [
+                            { "DamageType": "Lightning",  "Damage": 10 }
+                        ]
+                    },
+                    "ContextTags": [
+                        "debuff_shocked",
+                    ]
+                },
+                "{{ModID}}_Wet": {
+                    "Type": "Default",
+                    "DisplayName": "{{i18n:monster-buff.wet.display-name}}",
+                    "Description": "{{i18n:monster-buff.wet.description}}",
+                    "Duration": 7.5,
+                    "IsDebuff": "true",
+                    "DoAnimationEverySec": 0.5,
+                    "TemporaryAnimatedSprite": "{{ModID}}_WetMonsterBuff",
+                    "Attributes": {
+                        "ResistanceData": [
+                            { "DamageType": "Fire", "Delta": 1 },
+                            { "DamageType": "Lightning", "Delta": -1 },
+                            { "DamageType": "Ice", "Delta": -1 }
+                        ],
+                    },
+                    "ContextTags": [
+                        "debuff_wet",
+                    ]
+                },
+                "{{ModID}}_CrimsonDaggerLowerPhysRes": {
+                    "Type": "Default",
+                    "DisplayName": "",
+                    "Description": "",
+                    "Duration": 5,
+                    "IsDebuff": "true",
+                    "Attributes": {
+                        "ResistanceData": [
+                            { "DamageType": "Physical", "Delta": -1}
+                        ]
+                    },
+                    "ContextTags": [
+                        "debuff_physical_resistance_lower"
+                    ]
+                },
+                "{{ModID}}_Burn": {
+                    "Type": "Stackable",
+                    "DisplayName": "Burn",
+                    "Description": "Enemy takes constant damage",
+                    "Duration": 6,
+                    "IsDebuff": "true",
+                    "DoEffectEverySec": 0.75,
+                    "DoAnimationEverySec": 0.5,
+                    "TemporaryAnimatedSprite": "{{ModID}}_BurnMonsterBuff",
+                    "MaxStacks": -2,
+                    "IndependentStacks": true,
+                    "EffectsPerStack": {
+                        "DamageData": [
+                            { "DamageType": "Fire",  "Damage": 2 }
+                        ]
+                    },
+                    "ContextTags": [
+                        "debuff_burn"
+                    ]
+                }
+            }
+        }
+    ]
+}

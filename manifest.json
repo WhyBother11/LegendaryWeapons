@@ -1,0 +1,19 @@
+{
+    "Name": "Legendary Weapons",
+    "Author": "WhyBother11",
+    "Version": "%ProjectVersion%",
+    "UniqueId": "WhyBother11.LegendaryWeapons",
+    "Description": "Adds a variety of new weapons with unique mechanics",
+    "EntryDll": "LegendaryWeapons.dll",
+    "MinimumApiVersion": "4.5.2",
+    "Dependencies": [
+        {
+            "UniqueID": "spacechase0.SpaceCore",
+            "MinimumVersion": "1.28.4"
+        },
+        {
+            "UniqueID": "WhyBother11.CombatExtended",
+            "MinimumVersion": "0.5.0"
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Projectiles",
+            "Action": "EditData",
+            "Target": "Mods/WhyBother11.CombatExtended/Projectiles",
+            "Entries": {
+                "{{ModID}}_MjolnirProjectile": {
+                    "Id": "{{ModID}}_MjolnirProjectile",
+                    "MinDamage": 50,
+                    "MaxDamage": 60,
+                    "MaxDistance": 8,
+                    "Velocity": 7,
+                    "RotationVelocity": 0.15,
+                    "TailLength": 0,
+                    "ItemId": "(W){{ModID}}_Mjolnir"
+                },
+                "{{ModID}}_MjolnirAwakenedProjectile": {
+                    "Id": "{{ModID}}_MjolnirAwakenedProjectile",
+                    "MinDamage": 65,
+                    "MaxDamage": 70,
+                    "MaxDistance": 10,
+                    "Velocity": 9,
+                    "RotationVelocity": 0.15,
+                    "TailLength": 0,
+                    "ItemId": "(W){{ModID}}_MjolnirAwakened"
+                },
+                "{{ModID}}_LightningProjectile1": {
+                    "Id": "{{ModID}}_MjolnirLightningProjectile1",
+                    "MinDamage": 25,
+                    "MaxDamage": 25,
+                    "MaxDistance": 5,
+                    "Velocity": 9,
+                    "TailLength": 0,
+                    "Texture": "Mods/{{ModID}}/Animations/LightningProjectile",
+                    "SpriteIndex": 0,
+                    "Animation": "0 3 1 3 2 3"
+                },
+                "{{ModID}}_LightningProjectile2": {
+                    "Id": "{{ModID}}_LightningProjectile2",
+                    "MinDamage": 20,
+                    "MaxDamage": 20,
+                    "MaxDistance": 5,
+                    "Velocity": 9,
+                    "TailLength": 0,
+                    "Texture": "Mods/{{ModID}}/Animations/LightningProjectile",
+                    "SpriteIndex": 0,
+                    "Animation": "0 3 1 3 2 3"
+                },
+                "{{ModID}}_LightningProjectile3": {
+                    "Id": "{{ModID}}_MjolnirLightningProjectile3",
+                    "MinDamage": 15,
+                    "MaxDamage": 15,
+                    "MaxDistance": 5,
+                    "Velocity": 9,
+                    "TailLength": 0,
+                    "Texture": "Mods/{{ModID}}/Animations/LightningProjectile",
+                    "SpriteIndex": 0,
+                    "Animation": "0 3 1 3 2 3"
+                },
+                "{{ModID}}_LightningProjectile4": {
+                    "Id": "{{ModID}}_MjolnirLightningProjectile4",
+                    "MinDamage": 10,
+                    "MaxDamage": 10,
+                    "MaxDistance": 5,
+                    "Velocity": 9,
+                    "TailLength": 0,
+                    "Texture": "Mods/{{ModID}}/Animations/LightningProjectile",
+                    "SpriteIndex": 0,
+                    "Animation": "0 3 1 3 2 3"
+                },
+                "{{ModID}}_LightningProjectile5": {
+                    "Id": "{{ModID}}_MjolnirLightningProjectile5",
+                    "MinDamage": 5,
+                    "MaxDamage": 5,
+                    "MaxDistance": 5,
+                    "Velocity": 9,
+                    "TailLength": 0,
+                    "Texture": "Mods/{{ModID}}/Animations/LightningProjectile",
+                    "SpriteIndex": 0,
+                    "Animation": "0 3 1 3 2 3"
+                }
+            }
+        }
+    ]
+}

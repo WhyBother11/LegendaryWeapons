@@ -1,0 +1,55 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Assets",
+            "Action": "Load",
+            "Target": "Mods/{{ModID}}/objects",
+            "FromFile": "assets/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Add Objects",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModID}}_CrimsonStone": {
+                    "Name": "{{ModID}}_CrimsonStone",
+                    "DisplayName": "{{i18n:object.crimson-stone.display-name}}",
+                    "Description": "{{i18n:object.crimson-stone.description}}",
+                    "Type": "Crafting",
+                    "Category": 0,
+                    "Price": 5000,
+                    "Texture": "Mods/{{ModID}}/objects",
+                    "SpriteIndex": 1,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true
+                },
+                "{{ModID}}_ThunderSoul": {
+                    "Name": "{{ModID}}_ThunderSoul",
+                    "DisplayName": "{{i18n:object.thunder-soul.display-name}}",
+                    "Description": "{{i18n:object.thunder-soul.description}}",
+                    "Type": "Crafting",
+                    "Category": 0,
+                    "Price": 5000,
+                    "Texture": "Mods/{{ModID}}/objects",
+                    "SpriteIndex": 2,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true
+                },
+                "{{ModID}}_MjolnirObject": {
+                    "Name": "{{ModID}}_MjolnirObject",
+                    "DisplayName": "???",
+                    "Description": "...",
+                    "Type": "Basic",
+                    "Category": -999,
+                    "Texture": "Mods/{{ModID}}/objects",
+                    "SpriteIndex": 0,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true
+                }
+            }
+        }
+    ]
+}

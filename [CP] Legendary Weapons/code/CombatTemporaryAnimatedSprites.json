@@ -1,0 +1,43 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Animated Temporary Sprites",
+            "Action": "EditData",
+            "Target": "Mods/WhyBother11.CombatExtended/CombatTemporaryAnimatedSprites",
+            "Entries": {
+                "{{ModID}}_WetMonsterBuff": {
+                    "Texture": "LooseSprites/Cursors",
+                    "SourceRect": {
+                        "X": 374, "Y": 362, "Width": 5, "Height": 9
+                    },
+                    "AnimationSpec": {
+                        "Type": "Random",
+                        "SpawnArea": "Top",
+                        "Movement": "Down"
+                    },
+                    "AttachedToMonster": true,
+                    "Interval": 200,
+                    "Scale": 3,
+                    "Loops": 8,
+                    "AlphaFade": 0.016
+                },
+                "{{ModID}}_BurnMonsterDebuff": {
+                    "Texture": "Mods/{{ModID}}/objects",
+                    "SourceRect": {
+                        "X": 52, "Y": 3, "Width": 8, "Height": 9
+                    },
+                    "AnimationSpec": {
+                        "Type": "Random",
+                        "SpawnArea": "Bottom",
+                        "Movement": "Up"
+                    },
+                    "AttachedToMonster": true,
+                    "Interval": 200,
+                    "Scale": 3,
+                    "Loops": 8,
+                    "AlphaFade": 0.016
+                }
+            }
+        }
+    ]
+}

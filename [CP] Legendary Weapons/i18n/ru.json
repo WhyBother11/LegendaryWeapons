@@ -1,0 +1,23 @@
+{
+    // weapons //
+    "weapon.mjolnir.display-name": "Мьёлнир",
+    "weapon.mjolnir.description": "Возрадуйся, Достойный, ибо дарована тебе сила Тора, Бога Грома.",
+    "weapon.mjolnir-awakened.display-name": "Пробудившийся Мьёлнир",
+    "weapon.mjolnir-awakened.description": "Возрадуйся, Достойный, ибо дарована тебе совершенная сила Тора, Бога Грома.",
+    "weapon.crimson-dagger.display-name": "Алый кинжал",
+    "weapon.crimson-dagger.description": "Подарок от того, кто правит мёртвыми.",
+    "weapon.crimson-dagger-ultimate.display-name": "Ультимативный алый кинжал",
+    "weapon.crimson-dagger-ultimate.description": "Наиболее ценный подарок от того, кто правит мёртвыми.",
+    "weapon.elemental-blade.display-name": "Стихийный клинок",
+    "weapon.elemental-blade.description": "Этот клинок может управлять стихиями.",
+    // objects //
+    "object.thunder-soul.display-name": "Душа Бури",
+    "object.thunder-soul.description": "Заключите такие души в молот Бога Грома, чтобы пробудить это оружие.",
+    "object.crimson-stone.display-name": "Алый камень",
+    "object.crimson-stone.description": "Используйте это, чтобы раскрыть полный потенциал Алого клинка.",
+    // monster buffs //
+    "monster-buff.shocked.display-name": "Шокированный",
+    "monster-buff.shocked.description": "Поражённый монстр оглушён и получает 10 урона молнией каждые 1.5 секунды.",
+    "monster-buff.wet.display-name": "Мокрый",
+    "monster-buff.wet.description": "У поражённого монстра уменьшается сопротивляемость к ледяному урону и урону молнией, увеличивается сопротивляемость урону огнём."
+} 

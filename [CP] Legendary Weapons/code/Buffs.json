@@ -1,0 +1,24 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Custom Buff Assets",
+            "Action": "Load",
+            "Target": "Mods/{{ModID}}/crimson_dagger_buff",
+            "FromFile": "assets/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Add Custom Buffs",
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModID}}_CrimsonDaggerBuff": {
+                    "DisplayName": "{{i18n:buff.crimson-dagger-buff.display-name}}",
+                    "Description": "{{i18n:buff.crimson-dagger-buff.description}}",
+                    "Duration": "30000",
+                    "IconTexture": "Mods/{{ModID}}/crimson_dagger_buff",
+                    "IconSpriteIndex": 0
+                }
+            }
+        }
+    ]
+}

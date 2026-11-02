@@ -1,0 +1,39 @@
+{
+    // config //
+    // messages //
+    "message.mjolnir.lift-unworthy": "You are unable to lift the hammer. You feel that you are not worthy of it yet.",
+    "message.mjolnir.lift-worthy": "As the hammer flies into you hand, you feel that it deems you worthy.",
+    "message.thunder-soul.acquired": "The Galaxy Soul absorbed the power of lightning! What weapon may it enhance now?",
+    // weapon display //
+    /// Compatibility for languages with genders
+    "weapon-display.legendary-weapon.category-name.sword": "Legendary {0}",
+    "weapon-display.legendary-weapon.category-name.dagger": "Legendary {0}",
+    "weapon-display.legendary-weapon.category-name.club": "Legendary {0}",
+    "weapon-display.ultimate-weapon.category-name.sword": "Ultimate {0}",
+    "weapon-display.ultimate-weapon.category-name.dagger": "Ultimate {0}",
+    "weapon-display.ultimate-weapon.category-name.club": "Ultimate {0}",
+    // parchment //
+    /// mjolnir ///
+    "parchment.mjolnir.abilities.throw-mjolnir": "Throws your Mjölnir in direction of cursor. Damages hit enemies for {0}% of attack and has {1}% chance of inflicting Shocked debuff.",
+    "parchment.mjolnir.abilities.summon-rain": "Call upon the mightiest clouds to pour rain in a range, applying Wet debuff on all monsters and farmers within range.",
+    "parchment.mjolnir.passives.shocking-weapon": "Attacks by this weapon have {0}% chance of inflicting Shocked debuff.",
+    "parchment.mjolnir.passives.chain-lightning":  "When thrown Mjölnir strikes a monster, fire lightning towards closest monster within {0} tiles and damages it for {1} Lightning dmg. It cal bounce",
+    "parchment.mjolnir.hint1.vague": "Whenever I step on Ginger Island on a rainy day, I fell like there is something somewhere judging me.",
+    "parchment.mjolnir.hint1.detailed": "Whenever it rains on Ginger Island, if I wander around a bit I always find a lying hammer. What can it do?",
+    "parchment.mjolnir.hint2.vague": "I tried to lift this hammer, but couldn't. For some reason, I fell like I'm not worthy of it yet. Maybe I don't have good enough skills?",
+    "parchment.mjolnir.hint2.detailed": "I tried to lift this hammer, but couldn't. Do be deemed worthy I should master my skills.",
+    "parchment.mjolnir.hint3.vague": "There is an old tale of hammer that belongs to the Thunder God. To awaken its ultimate power, one does not simply forge it with Galaxy Souls, but special Thunder Souls. But how one gets them is a tale lost in time. I only know that one should somehow force the lightning to struck the Galaxy Soul.",
+    "parchment.mjolnir.hint3.detailed": "I lifted the hammer, but its powers are not enough. To awaken its ultimate power, you need special Thunder Souls that can be acquired only by forcing lightning to struck Galaxy Soul. I wonder if having lightning rod in my inventory may help?",
+    /// crimson dagger ///
+    "parchment.crimson-dagger.passives.phys-res-debuff": "Whenever Crimson dagger damages a monster, this monster has its Physical resistance lowered for {0} seconds.",
+    "parchment.crimson-dagger.passives.crimson-doom": "Whenever you slay a monster or have critical strike, gain one stack of Crimson Doom buff: improves critical chance and damage when attacking with this dagger by {0} and {1} respectively, for {2} seconds.",
+    "parchment.crimson-dagger.abilities.unleashed": "For {0} seconds, Crimson Doom buff has no stack limit.",
+    "parchment.crimson-dagger.hint1.vague": "There are ancient records about monsters worshipping so-called Lord of Death. They build statues in His favor. They even believed that He may grant a special boon to worthy ones.",
+    "parchment.crimson-dagger.hint1.detailed": "In Quarry mine there is a statue of Grim Reaper. I believe it was built by followers of ancient monster religion that believed their God may grant a special weapons to worthy followers.",
+    "parchment.crimson-dagger.hint2.vague": "These monsters worshipped by lighting braziers in their God's image. Records also say that to be granted the boon, you should part your ways with the most precious gem.",
+    "parchment.crimson-dagger.hint2.detailed": "These monsters worshipped by lighting Skull braziers. You'd also need to bring a Prismatic shard so that He may notice you.",
+    "parchment.crimson-dagger.hint3.vague": "But receiving said boon is not the ultimate sign of devotion. You'd need to collect enough items that resemble Him and a Galaxy Soul.",
+    "parchment.crimson-dagger.hint3.detailed": "But it does not end on receiving this weapon. To prove your devotion, you should gather 6 various bone items and a Galaxy Soul to please your master.",
+    "parchment.crimson-dagger.hint4.vague": "Once you've collected items, make sure to sacrifice them before Him while holding the most precious sacrificial item. Then use received stone to forge the granted weapon.",
+    "parchment.crimson-dagger.hint4.detailed": "Once you've collected items, go back to His statue and hold Galaxy Soul. He will notice you and take sacrificial items, granting you a special stone. Use it in the Forge to strengthen received dagger."
+}

@@ -1,0 +1,130 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Trigger Actions For Ability Triggers",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_MjolnirSummonRain_AbilityTriggered": {
+                    "Id": "{{ModID}}_MjolnirSummonRain_AbilityTriggered",
+                    "Trigger": "WhyBother11.CombatExtended_AbilityTriggered",
+                    "Condition": "WhyBother11.CombatExtended_ABILITY_ID {{ModID}}_MjolnirSummonRain",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Wet 1 {{ModID}}_SummonRainAbilityRange"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_MjolnirCallLightning_AbilityTriggered": {
+                    "Id": "{{ModID}}_MjolnirCallLightning_AbilityTriggered",
+                    "Trigger": "WhyBother11.CombatExtended_AbilityTriggered",
+                    "Condition": "WhyBother11.CombatExtended_ABILITY_ID {{ModID}}_MjolnirCallLightning, WhyBother11.CombatExtended_ACTION_POINTS {{ModID}}_MjolnirActionPoint 10",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_AddActionPoints {{ModID}}_MjolnirActionPoint -10",
+                        "WhyBother11.CombatExtended_DamageMonster Lightning {{ModID}}_CallLightningRange 30 35",
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 0.1 {{ModID}}_CallLightningRange",
+                        "WhyBother11.CombatExtended_LightningStrike {{ModID}}_CallLightningRange monster",
+                        "spacechase0.SpaceCore_PlaySound thunder true"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_MjolnirAwakenedCallLightning_AbilityTriggered": {
+                    "Id": "{{ModID}}_MjolnirAwakenedCallLightning_AbilityTriggered",
+                    "Trigger": "WhyBother11.CombatExtended_AbilityTriggered",
+                    "Condition": "WhyBother11.CombatExtended_ABILITY_ID {{ModID}}_MjolnirAwakenedCallLightning, WhyBother11.CombatExtended_ACTION_POINTS {{ModID}}_MjolnirAwakenedActionPoint 10",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_AddActionPoints {{ModID}}_MjolnirAwakenedActionPoint -10",
+                        "WhyBother11.CombatExtended_DamageMonster Lightning {{ModID}}_CallLightningRange 40 50",
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 0.125 {{ModID}}_CallLightningRange",
+                        "WhyBother11.CombatExtended_LightningStrike {{ModID}}_CallLightningRange monster",
+                        "spacechase0.SpaceCore_PlaySound thunder true"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_ActivateElementalBladeForm_AbilityTriggered": {
+                    "Id": "{{ModID}}_ActivateElementalBladeForm_AbilityTriggered",
+                    "Trigger": "WhyBother11.CombatExtended_AbilityTriggered",
+                    "Condition": "WhyBother11.CombatExtended_ABILITY_ID {{ModID}}_ActivateElementalBladeForm",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ActivateElementalBladeForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_AddWeaponAbility {{ModID}}_ElementalBladeFireForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_AddWeaponAbility {{ModID}}_ElementalBladeIceForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_AddWeaponAbility {{ModID}}_ElementalBladeLightningForm {{ModID}}_ElementalBlade"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_ElementalBladeFireForm_AbilityTriggered": {
+                    "Id": "{{ModID}}_ElementalBladeFireForm_AbilityTriggered",
+                    "Trigger": "WhyBother11.CombatExtended_AbilityTriggered",
+                    "Condition": "WhyBother11.CombatExtended_ABILITY_ID {{ModID}}_ElementalBladeFireForm",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeIceForm  {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeLightningForm  {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_SetWeaponState {{ModId}}_ElementalBlade FireForm"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_ElementalBladeIceForm_AbilityTriggered": {
+                    "Id": "{{ModID}}_ElementalBladeIceForm_AbilityTriggered",
+                    "Trigger": "WhyBother11.CombatExtended_AbilityTriggered",
+                    "Condition": "WhyBother11.CombatExtended_ABILITY_ID {{ModID}}_ElementalBladeIceForm",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeFireForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeLightningForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_SetWeaponState {{ModId}}_ElementalBlade IceForm"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_ElementalBladeLightningForm_AbilityTriggered": {
+                    "Id": "{{ModID}}_ElementalBladeLightningForm_AbilityTriggered",
+                    "Trigger": "WhyBother11.CombatExtended_AbilityTriggered",
+                    "Condition": "WhyBother11.CombatExtended_ABILITY_ID {{ModID}}_ElementalBladeLightningForm",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeFireForm  {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeIceForm  {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_SetWeaponState {{ModId}}_ElementalBlade LightningForm"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_ElementalBladeFireForm_AbilityEnded": {
+                    "Id": "{{ModID}}_ElementalBladeFireForm_AbilityEnded",
+                    "Trigger": "WhyBother11.CombatExtended_AbilityEnded",
+                    "Condition": "WhyBother11.CombatExtended_ABILITY_ID {{ModID}}_ElementalBladeFireForm {{ModID}}_ElementalBladeIceForm {{ModID}}_ElementalBladeLightningForm",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_SetWeaponState {{ModId}}_ElementalBlade _default"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_ElementalBladeForms_AbilityCooldownEnded": {
+                    "Id": "{{ModID}}_ElementalBladeForms_AbilityCooldownEnded",
+                    "Trigger": "WhyBother11.CombatExtended_AbilityCooldownEnded",
+                    "Condition": "WhyBother11.CombatExtended_ABILITY_ID {{ModID}}_ElementalBladeFireForm {{ModID}}_ElementalBladeIceForm {{ModID}}_ElementalBladeLightningForm",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_AddWeaponAbility {{ModID}}_ActivateElementalBladeForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeIceForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeFireForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeLightningForm {{ModID}}_ElementalBlade"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_CrimsonDaggerUnleashed_AbilityTriggered": {
+                    "Id": "{{ModID}}_CrimsonDaggerUnleashed_AbilityTriggered",
+                    "Trigger": "WhyBother11.CombatExtended_AbilityTriggered",
+                    "Condition": "WhyBother11.CombatExtended_ABILITY_ID {{ModID}}_CrimsonDaggerUnleashed",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_ChangeBuffStackLimit {{ModID}}_CrimsonDaggerBuff -2"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_CrimsonDaggerUnleashed_AbilityEnded": {
+                    "Id": "{{ModID}}_CrimsonDaggerUnleashed_AbilityEnded",
+                    "Trigger": "WhyBother11.CombatExtended_AbilityEnded",
+                    "Condition": "WhyBother11.CombatExtended_ABILITY_ID {{ModID}}_CrimsonDaggerUnleashed",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_ChangeBuffStackLimit {{ModID}}_CrimsonDaggerBuff 10"
+                    ],
+                    "MarkActionApplied": "false"
+                }
+            }
+        }
+    ]
+}

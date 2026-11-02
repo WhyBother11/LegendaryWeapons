@@ -1,0 +1,15 @@
+{
+    "Name": "Legendary Weapons CP",
+    "Author": "WhyBother11",
+    "Version": "1.0.0",
+    "UniqueId": "WhyBother11.LegendaryWeaponsCP",
+    "Description": "LEGENDARIA",
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "WhyBother11.LegendaryWeapons"
+        },
+    ]
+}

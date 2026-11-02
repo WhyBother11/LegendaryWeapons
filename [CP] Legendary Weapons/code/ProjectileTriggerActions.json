@@ -1,0 +1,72 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_MjolnirAwakenedProjectile_MonsterHit": {
+                    "Id": "{{ModID}}_MjolnirAwakenedProjectile_MonsterHit",
+                    "Trigger": "WhyBother11.CombatExtended_ProjectileMonsterHit",
+                    "Condition": "WhyBother11.CombatExtended_PROJECTILE_ID {{ModID}}_MjolnirAwakenedProjectile",
+                    "Actions": [
+                        "spacechase0.SpaceCore_PlaySound thunder true",
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 1",
+                        "WhyBother11.CombatExtended_LaunchProjectile {{ModID}}_LightningProjectile1 _closestMonster"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_MjolnirProjectile_MonsterHit": {
+                    "Id": "{{ModID}}_MjolnirProjectile_MonsterHit",
+                    "Trigger": "WhyBother11.CombatExtended_ProjectileMonsterHit",
+                    "Condition": "WhyBother11.CombatExtended_PROJECTILE_ID {{ModID}}_MjolnirProjectile",
+                    "Actions": [
+                        "spacechase0.SpaceCore_PlaySound thunder true",
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 1",
+                        "WhyBother11.CombatExtended_LaunchProjectile {{ModID}}_LightningProjectile3 _closestMonster"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_LightningProjectile1_MonsterHit": {
+                    "Id": "{{ModID}}_LightningProjectile1_MonsterHit",
+                    "Trigger": "WhyBother11.CombatExtended_ProjectileMonsterHit",
+                    "Condition": "WhyBother11.CombatExtended_PROJECTILE_ID {{ModID}}_LightningProjectile1",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 1",
+                        "WhyBother11.CombatExtended_LaunchProjectile {{ModID}}_LightningProjectile2 _closestMonster"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_LightningProjectile2_MonsterHit": {
+                    "Id": "{{ModID}}_LightningProjectile2_MonsterHit",
+                    "Trigger": "WhyBother11.CombatExtended_ProjectileMonsterHit",
+                    "Condition": "WhyBother11.CombatExtended_PROJECTILE_ID {{ModID}}_LightningProjectile2",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 1",
+                        "WhyBother11.CombatExtended_LaunchProjectile {{ModID}}_LightningProjectile3 _closestMonster"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_LightningProjectile3_MonsterHit": {
+                    "Id": "{{ModID}}_LightningProjectile3_MonsterHit",
+                    "Trigger": "WhyBother11.CombatExtended_ProjectileMonsterHit",
+                    "Condition": "WhyBother11.CombatExtended_PROJECTILE_ID {{ModID}}_LightningProjectile3",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 1",
+                        "WhyBother11.CombatExtended_LaunchProjectile {{ModID}}_LightningProjectile4 _closestMonster"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_LightningProjectile4_MonsterHit": {
+                    "Id": "{{ModID}}_LightningProjectile4_MonsterHit",
+                    "Trigger": "WhyBother11.CombatExtended_ProjectileMonsterHit",
+                    "Condition": "WhyBother11.CombatExtended_PROJECTILE_ID {{ModID}}_LightningProjectile4",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 1",
+                        "WhyBother11.CombatExtended_LaunchProjectile {{ModID}}_LightningProjectile5 _closestMonster"
+                    ],
+                    "MarkActionApplied": "false"
+                }
+            }
+        }
+    ]
+}

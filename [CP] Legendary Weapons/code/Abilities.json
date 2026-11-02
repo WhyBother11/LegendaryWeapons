@@ -1,0 +1,136 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Ability Assets",
+            "Action": "Load",
+            "Target": "Mods/{{ModID}}/abilities",
+            "FromFile": "assets/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Add Abilities",
+            "Action": "EditData",
+            "Target": "Mods/WhyBother11.CombatExtended/Abilities",
+            "Entries": {
+                "{{ModID}}_MjolnirSummonRain": {
+                    "Type": "Default",
+                    "DisplayName": "{{i18n:ability.mjolnir-awakened.summon-rain.display-name}}",
+                    "Description": "{{i18n:ability.mjolnir-awakened.summon-rain.description}}",
+                    "Cooldown": 20,
+                    "Texture": "Mods/{{ModID}}/abilities",
+                    "SpriteIndex": 0,
+                    "HighlightRangeId": "{{ModID}}_SummonRainAbilityRange"
+                },
+                "{{ModID}}_ThrowMjolnir": {
+                    "Type": "Throw",
+                    "DisplayName": "{{i18n:ability.mjolnir.throw-mjolnir.display-name}}",
+                    "Description": "{{i18n:ability.mjolnir.throw-mjolnir.description}}",
+                    "Cooldown": 0,
+                    "Texture": "Mods/{{ModID}}/abilities",
+                    "SpriteIndex": 1,
+                    "Returnable": false,
+                    "ProjectileId": "{{ModID}}_MjolnirProjectile"
+                },
+                "{{ModID}}_ThrowMjolnirAwakened": {
+                    "Type": "Throw",
+                    "DisplayName": "{{i18n:ability.mjolnir.throw-mjolnir.display-name}}",
+                    "Description": "{{i18n:ability.mjolnir.throw-mjolnir.description}}",
+                    "Cooldown": 0,
+                    "Texture": "Mods/{{ModID}}/abilities",
+                    "SpriteIndex": 1,
+                    "Returnable": true,
+                    "ProjectileId": "{{ModID}}_MjolnirAwakenedProjectile"
+                },
+                "{{ModID}}_MjolnirAwakenedCallLightning": {
+                    "Type": "Default",
+                    "DisplayName": "{{i18n:ability.mjolnir-awakened.call-lightning.display-name}}",
+                    "Description": "{{i18n:ability.mjolnir-awakened.call-lightning.description}}",
+                    "Cooldown": 0,
+                    "Texture": "Mods/{{ModID}}/abilities",
+                    "SpriteIndex": 7,
+                    "HighlightRangeId": "{{ModID}}_CallLightningRange"
+                },
+                "{{ModID}}_MjolnirCallLightning": {
+                    "Type": "Default",
+                    "DisplayName": "{{i18n:ability.mjolnir.call-lightning.display-name}}",
+                    "Description": "{{i18n:ability.mjolnir.call-lightning.description}}",
+                    "Cooldown": 0,
+                    "Texture": "Mods/{{ModID}}/abilities",
+                    "SpriteIndex": 7,
+                    "HighlightRangeId": "{{ModID}}_CallLightningRange"
+                },
+                "{{ModID}}_CrimsonDaggerUnleashed": {
+                    "Type": "Continuous",
+                    "DisplayName": "{{i18n:ability.crimson-dagger.unleashed.display-name}}",
+                    "Description": "{{i18n:ability.crimson-dagger.unleashed.description}}",
+                    "Cooldown": "30",
+                    "Duration": "20",
+                    "AttachedToWeapon": "false",
+                    "Texture": "Mods/{{ModID}}/abilities",
+                    "SpriteIndex": 2
+                },
+                "{{ModID}}_CrimsonDaggerUltimateUnleashed": {
+                    "Type": "Continuous",
+                    "DisplayName": "{{i18n:ability.crimson-dagger-ultimate.unleashed.display-name}}",
+                    "Description": "{{i18n:ability.crimson-dagger-ultimate.unleashed.description}}",
+                    "Cooldown": "20",
+                    "Duration": "20",
+                    "AttachedToWeapon": "false",
+                    "Texture": "Mods/{{ModID}}/abilities",
+                    "SpriteIndex": 2
+                },
+                "{{ModID}}_BleedingCuts": {
+                    "Type": "Default",
+                    "DisplayName": "{{i18n:ability.bleeding-cuts.display-name}}",
+                    "Description": "{{i18n:ability.bleeding-cuts.description}}",
+                    "Cooldown": 30,
+                    "Texture": "Mods/{{ModID}}/abilities",
+                    "SpriteIndex": 2
+                },
+                "{{ModID}}_ActivateElementalBladeForm": {
+                    "Type": "Default",
+                    "DisplayName": "{{i18n:ability.activate-elemental-blade.display-name}}",
+                    "Description": "{{i18n:ability.activate-elemental-blade.description}}",
+                    "Cooldown": 0,
+                    "Texture": "Mods/{{ModID}}/abilities",
+                    "SpriteIndex": 3
+                },
+                "{{ModID}}_ElementalBladeFireForm": {
+                    "Type": "Continuous",
+                    "DisplayName": "{{i18n:ability.elemental-blade-fire-form.display-name}}",
+                    "Description": "{{i18n:ability.elemental-blade-fire-form.description}}",
+                    "Cooldown": 60,
+                    "Duration": 20,
+                    "Texture": "Mods/{{ModID}}/abilities",
+                    "SpriteIndex": 4,
+                    "ContextTags": [
+                        "elemental_blade_form"
+                    ]
+                },
+                "{{ModID}}_ElementalBladeIceForm": {
+                    "Type": "Continuous",
+                    "DisplayName": "{{i18n:ability.elemental-blade-ice-form.display-name}}",
+                    "Description": "{{i18n:ability.elemental-blade-ice-form.description}}",
+                    "Cooldown": 60,
+                    "Duration": 20,
+                    "Texture": "Mods/{{ModID}}/abilities",
+                    "SpriteIndex": 5,
+                    "ContextTags": [
+                        "elemental_blade_form"
+                    ]
+                },
+                "{{ModID}}_ElementalBladeLightningForm": {
+                    "Type": "Continuous",
+                    "DisplayName": "{{i18n:ability.elemental-blade-lightning-form.display-name}}",
+                    "Description": "{{i18n:ability.elemental-blade-lightning-form.description}}",
+                    "Cooldown": 60,
+                    "Duration": 20,
+                    "Texture": "Mods/{{ModID}}/abilities",
+                    "SpriteIndex": 6,
+                    "ContextTags": [
+                        "elemental_blade_form"
+                    ]
+                }
+            }
+        }
+    ]
+}

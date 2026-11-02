@@ -1,0 +1,9 @@
+{
+    "Format": "2.8.0",
+    "Changes": [
+        {
+            "Action": "Include",
+            "FromFile": "code/Abilities.json, code/AbilityTriggerActions.json, code/ActionPoints.json, code/Assets.json, code/AttackTriggerActions.json, code/BuffExtensionData.json, code/Buffs.json, code/CombatTemporaryAnimatedSprites.json, code/MonsterBuffs.json, code/MonsterBuffTriggerActions.json, code/Objects.json, code/Projectiles.json, code/ProjectileTriggerActions.json, code/Ranges.json, code/WeaponExtensionData.json, code/Weapons.json",
+        }
+    ]
+}
