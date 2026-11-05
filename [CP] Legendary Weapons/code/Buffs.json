@@ -14,7 +14,7 @@
                 "{{ModID}}_CrimsonDaggerBuff": {
                     "DisplayName": "{{i18n:buff.crimson-dagger-buff.display-name}}",
                     "Description": "{{i18n:buff.crimson-dagger-buff.description}}",
-                    "Duration": "30000",
+                    "Duration": 60000,
                     "IconTexture": "Mods/{{ModID}}/crimson_dagger_buff",
                     "IconSpriteIndex": 0
                 }

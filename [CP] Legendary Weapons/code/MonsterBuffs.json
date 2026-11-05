@@ -51,7 +51,7 @@
                     "Type": "Default",
                     "DisplayName": "",
                     "Description": "",
-                    "Duration": 5,
+                    "Duration": -2,
                     "IsDebuff": "true",
                     "Attributes": {
                         "ResistanceData": [
@@ -64,19 +64,21 @@
                 },
                 "{{ModID}}_Burn": {
                     "Type": "Stackable",
-                    "DisplayName": "Burn",
-                    "Description": "Enemy takes constant damage",
+                    "DisplayName": "{{i18n:monster-buff.burn.display-name}}",
+                    "Description": "{{i18n:monster-buff.burn.description}}",
                     "Duration": 6,
                     "IsDebuff": "true",
                     "DoEffectEverySec": 0.75,
                     "DoAnimationEverySec": 0.5,
-                    "TemporaryAnimatedSprite": "{{ModID}}_BurnMonsterBuff",
-                    "MaxStacks": -2,
-                    "IndependentStacks": true,
-                    "EffectsPerStack": {
-                        "DamageData": [
-                            { "DamageType": "Fire",  "Damage": 2 }
-                        ]
+                    "TemporaryAnimatedSprite": "{{ModID}}_BurnMonsterDebuff",
+                    "StackableData": {
+                        "MaxStacks": -2,
+                        "IndependentStacks": true,
+                        "EffectsPerStack": {
+                            "DamageData": [
+                                { "DamageType": "Fire",  "Damage": 2 }
+                            ]
+                        }
                     },
                     "ContextTags": [
                         "debuff_burn"

@@ -27,7 +27,7 @@
                     "Cooldown": 0,
                     "Texture": "Mods/{{ModID}}/abilities",
                     "SpriteIndex": 1,
-                    "Returnable": false,
+                    "Returnable": true,
                     "ProjectileId": "{{ModID}}_MjolnirProjectile"
                 },
                 "{{ModID}}_ThrowMjolnirAwakened": {

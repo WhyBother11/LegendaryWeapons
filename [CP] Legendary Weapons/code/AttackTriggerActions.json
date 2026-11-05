@@ -36,7 +36,6 @@
                     "Id": "{{ModID}}_CrimsonDaggerLowerRes_AttackHitMonster",
                     "Trigger": "WhyBother11.CombatExtended_AttackHitMonster",
                     "Condition": "WhyBother11.CombatExtended_CURRENT_WEAPON {{ModID}}_CrimsonDagger {{ModID}}_CrimsonDaggerUltimate",
-                    //"Condition": "ANY \"WhyBother11.CombatExtended_CURRENT_WEAPON {{ModID}}_CrimsonDagger\" \"WhyBother11.CombatExtended_CURRENT_WEAPON {{ModID}}_CrimsonDaggerUltimate\"",
                     "Actions": [
                         "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_CrimsonDaggerLowerPhysRes 1"
                     ],
@@ -45,7 +44,7 @@
                 "{{ModID}}_CrimsonDaggerAddBuff_AttackHitMonster": {
                     "Id": "{{ModID}}_CrimsonDaggerAddBuff_AttackHitMonster",
                     "Trigger": "WhyBother11.CombatExtended_AttackHitMonster",
-                    "Condition": "WhyBother11.CombatExtended_CURRENT_WEAPON {{ModID}}_CrimsonDagger {{ModID}}_CrimsonDaggerUltimate, ANY \"WhyBother11.CombatExtended_DAMAGE_IS_CRIT\" \"WhyBother11.CombatExtended_MONSTER_HEALTH _ 0\"",
+                    "Condition": "WhyBother11.CombatExtended_CURRENT_WEAPON {{ModID}}_CrimsonDagger {{ModID}}_CrimsonDaggerUltimate, ANY \"WhyBother11.CombatExtended_DAMAGE_IS_CRIT\" \"WhyBother11.CombatExtended_MONSTER_HEALTH 0 0\"",
                     "Actions": [
                         "AddBuff {{ModID}}_CrimsonDaggerBuff"
                     ],

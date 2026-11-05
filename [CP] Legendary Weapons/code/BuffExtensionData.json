@@ -6,12 +6,16 @@
             "Target": "Mods/WhyBother11.CombatExtended/BuffExtensionData",
             "Entries": {
                 "{{ModID}}_CrimsonDaggerBuff": {
+                    "ExtraAttributes": {
+                        "FlatCriticalChance": 0.02,
+                        "FlatCriticalMultiplier": 0.1 
+                    },
                     "StackableData": {
                         "MaxStacks": 15,
                         "IndependentStacks": true,
-                        "AttributesPerStack": {
-                            "CriticalChanceMultiplier": 0.02,
-                            "CriticalPowerMultiplier": 0.075
+                        "ExtraAttributesPerStack": {
+                            "FlatCriticalChance": 0.02,
+                            "FlatCriticalMultiplier": 0.15
                         }
                     }
                 }

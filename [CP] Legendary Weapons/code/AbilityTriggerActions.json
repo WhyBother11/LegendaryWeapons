@@ -97,7 +97,7 @@
                 "{{ModID}}_ElementalBladeForms_AbilityCooldownEnded": {
                     "Id": "{{ModID}}_ElementalBladeForms_AbilityCooldownEnded",
                     "Trigger": "WhyBother11.CombatExtended_AbilityCooldownEnded",
-                    "Condition": "WhyBother11.CombatExtended_ABILITY_ID {{ModID}}_ElementalBladeFireForm {{ModID}}_ElementalBladeIceForm {{ModID}}_ElementalBladeLightningForm",
+                    "Condition": "WhyBother11.CombatExtended_ABILITY_CONTEXT_TAG elemental_blade_form",
                     "Actions": [
                         "WhyBother11.CombatExtended_AddWeaponAbility {{ModID}}_ActivateElementalBladeForm {{ModID}}_ElementalBlade",
                         "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeIceForm {{ModID}}_ElementalBlade",

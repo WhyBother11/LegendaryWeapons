@@ -19,9 +19,11 @@
     "object.crimson-stone.description": "Use it to unleash Crimson Dagger's full potential.",
     // monster buffs //
     "monster-buff.shocked.display-name": "Shocked",
-    "monster-buff.shocked.description": "Affected enemy is stunned and takes 10 Lightning damage every 1.5 second.",
+    "monster-buff.shocked.description": "Affected enemy is stunned and takes 10 Lightning damage every 1.5 seconds.",
     "monster-buff.wet.display-name": "Wet",
-    "monster-buff.wet.description": "Affected enemy's Ice and Lightning resistances are reduced, Fire resistance is increased.",
+    "monster-buff.wet.description": "For 7.5 seconds affected enemy's Ice and Lightning resistances are reduced, Fire resistance is increased.",
+    "monster-buff.burn.display-name": "Burn",
+    "monster-buff.burn.description": "Affected enemy takes 2 Fire damage for each stack and each trigger has 5% chance to apply 1 stack Burn debuff on enemies in 3x3 area. Triggers every 0.75 seconds.",
     // abilities //
     "ability.mjolnir-awakened.summon-rain.display-name": "Summon Rain",
     "ability.mjolnir-awakened.summon-rain.description": "Summon rain to apply Wet on all enemies within range. Cooldown: 20 seconds.",
