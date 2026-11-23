@@ -16,16 +16,25 @@
                         "StunTime": -2,
                         "ArmourClass": -2,
                         "DamageData": [
-                            { "DamageType": "Lightning", "Damage": 10 }
+                            { 
+                                "Id": "LightningDamage",
+                                "DamageType": "Lightning", 
+                                "Damage": 10
+                            }
                         ]
                     },
                     "Effects": {
                         "DamageData": [
-                            { "DamageType": "Lightning",  "Damage": 10 }
+                            {
+                                "Id": "LightningDamage",
+                                "DamageType": "Lightning",  
+                                "Damage": 10
+                            }
                         ]
                     },
                     "ContextTags": [
                         "debuff_shocked",
+                        "debuff_lightning_damage"
                     ]
                 },
                 "{{ModID}}_Wet": {
@@ -35,16 +44,30 @@
                     "Duration": 7.5,
                     "IsDebuff": "true",
                     "DoAnimationEverySec": 0.5,
-                    "TemporaryAnimatedSprite": "{{ModID}}_WetMonsterBuff",
+                    "AnimationTemporaryAnimatedSprites": [
+                        "{{ModID}}_WetMonsterBuff"
+                    ],
                     "Attributes": {
                         "ResistanceData": [
-                            { "DamageType": "Fire", "Delta": 1 },
-                            { "DamageType": "Lightning", "Delta": -1 },
-                            { "DamageType": "Ice", "Delta": -1 }
-                        ],
+                            { 
+                                "Id": "FireResUp",
+                                "DamageType": "Fire", 
+                                "Delta": 1
+                            },
+                            {
+                                "Id": "LightningResDown",
+                                "DamageType": "Lightning", 
+                                "Delta": -1
+                            },
+                            {
+                                "Id": "IceResDown",
+                                "DamageType": "Ice", 
+                                "Delta": -1
+                            }
+                        ]
                     },
                     "ContextTags": [
-                        "debuff_wet",
+                        "debuff_wet"
                     ]
                 },
                 "{{ModID}}_CrimsonDaggerLowerPhysRes": {
@@ -55,7 +78,11 @@
                     "IsDebuff": "true",
                     "Attributes": {
                         "ResistanceData": [
-                            { "DamageType": "Physical", "Delta": -1}
+                            { 
+                                "Id": "PhysRes", 
+                                "DamageType": "Physical", 
+                                "Delta": -1
+                            }
                         ]
                     },
                     "ContextTags": [
@@ -70,18 +97,60 @@
                     "IsDebuff": "true",
                     "DoEffectEverySec": 0.75,
                     "DoAnimationEverySec": 0.5,
-                    "TemporaryAnimatedSprite": "{{ModID}}_BurnMonsterDebuff",
+                    "AnimationTemporaryAnimatedSprites": [
+                        "{{ModID}}_BurnMonsterDebuff"
+                    ],
                     "StackableData": {
                         "MaxStacks": -2,
                         "IndependentStacks": true,
                         "EffectsPerStack": {
                             "DamageData": [
-                                { "DamageType": "Fire",  "Damage": 2 }
+                                { 
+                                    "Id": "FireDamage", 
+                                    "DamageType": "Fire",  
+                                    "Damage": 2
+                                }
                             ]
                         }
                     },
                     "ContextTags": [
-                        "debuff_burn"
+                        "debuff_burn",
+                        "debuff_fire_damage"
+                    ]
+                },
+                "{{ModID}}_Freeze": {
+                    "Type": "Stackable",
+                    "DisplayName": "{{i18n:monster-buff.freeze.display-name}}",
+                    "Description": "{{i18n:monster-buff.freeze.description}}",
+                    "Duration": 10,
+                    "IsDebuff": "true",
+                    "TemporaryAnimatedSprites": [
+                        "{{ModID}}_FreezeMonsterDebuff"
+                    ],
+                    "Attributes": {
+                        "Speed": -1
+                    },
+                    "StackableData": {
+                        "MaxStacks": 3
+                    },
+                    "ContextTags": [
+                        "debuff_freeze"
+                    ]
+                },
+                "{{ModID}}_Frozen": {
+                    "Type": "Default",
+                    "DisplayName": "{{i18n:monster-buff.frozen.display-name}}",
+                    "Description": "{{i18n:monster-buff.frozen.description}}",
+                    "Duration": 8,
+                    "IsDebuff": "true",
+                    "Attributes": {
+                        "StunTime": -2
+                    },
+                    "TemporaryAnimatedSprites": [
+                        "{{ModID}}_FreezeMonsterDebuff"
+                    ],
+                    "ContextTags": [
+                        "debuff_freeze"
                     ]
                 }
             }

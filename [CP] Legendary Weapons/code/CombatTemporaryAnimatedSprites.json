@@ -10,11 +10,9 @@
                     "SourceRect": {
                         "X": 374, "Y": 362, "Width": 5, "Height": 9
                     },
-                    "AnimationSpec": {
-                        "Type": "Random",
-                        "SpawnArea": "Top",
-                        "Movement": "Down"
-                    },
+                    "Area": "Top",
+                    "SpawnType": "Random",
+                    "Movement": "Down",
                     "Attached": true,
                     "Interval": 200,
                     "Scale": 3,
@@ -26,16 +24,25 @@
                     "SourceRect": {
                         "X": 52, "Y": 3, "Width": 8, "Height": 9
                     },
-                    "AnimationSpec": {
-                        "Type": "Random",
-                        "SpawnArea": "Bottom",
-                        "Movement": "Up"
-                    },
+                    "Area": "Bottom",
+                    "SpawnType": "Random",
+                    "Movement": "Up",
                     "Attached": true,
                     "Interval": 200,
                     "Scale": 3,
                     "Loops": 8,
                     "AlphaFade": 0.016
+                },
+                "{{ModID}}_FreezeMonsterDebuff": {
+                    "Texture": "LooseSprites/Cursors2",
+                    "SourceRect": {
+                        "X": 118, "Y": 227, "Width": 16, "Height": 13
+                    },
+                    "Area": "Bottom",
+                    "Attached": true,
+                    "Interval": 200,
+                    "Scale": 4,
+                    "Loops": 100
                 }
             }
         }

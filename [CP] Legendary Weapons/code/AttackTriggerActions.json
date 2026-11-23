@@ -14,15 +14,6 @@
                     ],
                     "MarkActionApplied": "false"
                 },
-                "{{ModID}}_Mjolnir_AttackHitMonsterTest": {
-                    "Id": "{{ModID}}_Mjolnir_AttackHitMonsterTest",
-                    "Trigger": "WhyBother11.CombatExtended_AttackHitAnyMonster",
-                    "Condition": "WhyBother11.CombatExtended_CURRENT_WEAPON {{ModID}}_Mjolnir",
-                    "Actions": [
-                        "WhyBother11.CombatExtended_AddPlayerHealth -5 true"
-                    ],
-                    "MarkActionApplied": "false"
-                },
                 "{{ModID}}_MjolnirAwakened_AttackHitMonster": {
                     "Id": "{{ModID}}_MjolnirAwakened_AttackHitMonster",
                     "Trigger": "WhyBother11.CombatExtended_AttackHitMonster",
@@ -32,17 +23,17 @@
                     ],
                     "MarkActionApplied": "false"
                 },
-                "{{ModID}}_CrimsonDaggerLowerRes_AttackHitMonster": {
-                    "Id": "{{ModID}}_CrimsonDaggerLowerRes_AttackHitMonster",
+                "{{ModID}}_CrimsonDagger_AttackHitMonster_LowerRes": {
+                    "Id": "{{ModID}}_CrimsonDagger_AttackHitMonster_LowerRes",
                     "Trigger": "WhyBother11.CombatExtended_AttackHitMonster",
                     "Condition": "WhyBother11.CombatExtended_CURRENT_WEAPON {{ModID}}_CrimsonDagger {{ModID}}_CrimsonDaggerUltimate",
                     "Actions": [
-                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_CrimsonDaggerLowerPhysRes 1"
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_CrimsonDaggerLowerPhysRes"
                     ],
                     "MarkActionApplied": "false"
                 },
-                "{{ModID}}_CrimsonDaggerAddBuff_AttackHitMonster": {
-                    "Id": "{{ModID}}_CrimsonDaggerAddBuff_AttackHitMonster",
+                "{{ModID}}_CrimsonDagger_AttackHitMonster_AddBuff": {
+                    "Id": "{{ModID}}_CrimsonDagger_AttackHitMonster_AddBuff",
                     "Trigger": "WhyBother11.CombatExtended_AttackHitMonster",
                     "Condition": "WhyBother11.CombatExtended_CURRENT_WEAPON {{ModID}}_CrimsonDagger {{ModID}}_CrimsonDaggerUltimate, ANY \"WhyBother11.CombatExtended_DAMAGE_IS_CRIT\" \"WhyBother11.CombatExtended_MONSTER_HEALTH 0 0\"",
                     "Actions": [
@@ -60,11 +51,30 @@
                     "MarkActionApplied": "false"
                 },
                 "{{ModID}}_ElementalBlade_AttackHitMonster_LightningForm": {
-                    "Id": "{{ModID}}_ElementalBlade_LightningForm",
+                    "Id": "{{ModID}}_ElementalBlade_AttackHitMonster_LightningForm",
                     "Trigger": "WhyBother11.CombatExtended_AttackHitMonster",
                     "Condition": "WhyBother11.CombatExtended_CURRENT_WEAPON {{ModID}}_ElementalBlade, WhyBother11.CombatExtended_WEAPON_STATE {{ModID}}_ElementalBlade LightningForm",
                     "Actions": [
                         "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 0.33"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_ElementalBlade_AttackHitMonster_IceForm": {
+                    "Id": "{{ModID}}_ElementalBlade_AttackHitMonster_IceForm",
+                    "Trigger": "WhyBother11.CombatExtended_AttackHitMonster",
+                    "Condition": "WhyBother11.CombatExtended_CURRENT_WEAPON {{ModID}}_ElementalBlade, WhyBother11.CombatExtended_WEAPON_STATE {{ModID}}_ElementalBlade IceForm, !WhyBother11.CombatExtended_MONSTER_HAS_BUFF {{ModID}}_Frozen",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Freeze"
+                    ],
+                    "MarkActionApplied": "false"
+                },
+                "{{ModID}}_Clubs_AttackHitMonster_FrozenDebuff": {
+                    "Id": "{{ModID}}_Clubs_AttackHitMonster_FrozenDebuff",
+                    "Trigger": "WhyBother11.CombatExtended_AttackHitMonster",
+                    "Condition": "WhyBother11.CombatExtended_CURRENT_WEAPON_TYPE club, WhyBother11.CombatExtended_MONSTER_HAS_BUFF {{ModID}}_Frozen",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_RemoveMonsterBuff {{ModID}}_Frozen",
+                        "WhyBother11.CombatExtended_DamageMonster Physical 40"
                     ],
                     "MarkActionApplied": "false"
                 }

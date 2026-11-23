@@ -22,6 +22,16 @@
                         "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Burn 0.05 {{ModID}}_FireDebuffSpreadingRange"
                     ],
                     "MarkActionApplied": "false"
+                },
+                "{{ModID}}_FreezeDebuff_Applied": {
+                    "Id": "{{ModID}}_FreezeDebuff_Applied",
+                    "Trigger": "WhyBother11.CombatExtended_MonsterBuffApplied",
+                    "Condition": "WhyBother11.CombatExtended_MONSTER_BUFF_ID {{ModID}}_Freeze, WhyBother11.CombatExtended_MONSTER_BUFF_STACKS {{ModID}}_Freeze 3",
+                    "Actions": [
+                        "WhyBother11.CombatExtended_RemoveMonsterBuff {{ModID}}_Freeze",
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Frozen"
+                    ],
+                    "MarkActionApplied": "false"
                 }
             }
         }

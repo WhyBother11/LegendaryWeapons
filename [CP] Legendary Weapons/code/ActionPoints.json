@@ -12,46 +12,6 @@
                     "Texture": "Mods/{{ModID}}/objects",
                     "SpriteIndex": 0
                 },
-                "{{ModID}}_MjolnirActionPointA": {
-                    "DisplayName": "A",
-                    "Description": "A",
-                    "MaxAmount": 12,
-                    "ReplenishTime": 20,
-                    "Texture": "Mods/{{ModID}}/objects",
-                    "SpriteIndex": 0
-                },
-                "{{ModID}}_MjolnirActionPointB": {
-                    "DisplayName": "B",
-                    "Description": "B",
-                    "MaxAmount": 12,
-                    "ReplenishTime": 20,
-                    "Texture": "Mods/{{ModID}}/objects",
-                    "SpriteIndex": 0
-                },
-                "{{ModID}}_MjolnirActionPointC": {
-                    "DisplayName": "C",
-                    "Description": "C",
-                    "MaxAmount": 12,
-                    "ReplenishTime": 20,
-                    "Texture": "Mods/{{ModID}}/objects",
-                    "SpriteIndex": 0
-                },
-                "{{ModID}}_MjolnirActionPointD": {
-                    "DisplayName": "D",
-                    "Description": "D",
-                    "MaxAmount": 12,
-                    "ReplenishTime": 20,
-                    "Texture": "Mods/{{ModID}}/objects",
-                    "SpriteIndex": 0
-                },
-                "{{ModID}}_MjolnirActionPointE": {
-                    "DisplayName": "E",
-                    "Description": "E",
-                    "MaxAmount": 12,
-                    "ReplenishTime": 20,
-                    "Texture": "Mods/{{ModID}}/objects",
-                    "SpriteIndex": 0
-                },
                 "{{ModID}}_MjolnirAwakenedActionPoint": {
                     "DisplayName": "{{i18n:action-point.mjolnir-awakened.lightning.display-name}}",
                     "Description": "{{i18n:action-point.mjolnir-awakened.lightning.description}}",

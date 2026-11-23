@@ -8,18 +8,22 @@
                 "{{ModID}}_SummonRainAbilityRange": {
                     "Tiles": [
                         {
+                            "Id": "MainRange",
                             "Type": "Add",
                             "RelativeTo": "cursor",
                             "Rectangles": [
                                 {
+                                    "Id": "TopArea",
                                     "From": { "X": -1, "Y": -2 },
                                     "To": { "X": 1, "Y": -2 }
                                 },
                                 {
+                                    "Id": "MiddleArea",
                                     "From": { "X": -2, "Y": -1 },
                                     "To": { "X": 2, "Y": 1 }
                                 },
                                 {
+                                    "Id": "BottomArea",
                                     "From": { "X": -1, "Y": 2 },
                                     "To": { "X": 1, "Y": 2 }
                                 }
@@ -30,10 +34,14 @@
                 "{{ModID}}_CallLightningRange": {
                     "Tiles": [
                         {
+                            "Id": "MainRange",
                             "Type": "Add",
                             "RelativeTo": "player",
                             "CursorLines": [
-                                { "Width": 3 }
+                                { 
+                                    "Id": "CursorLine",
+                                    "Width": 3
+                                }
                             ]
                         }
                     ]
@@ -41,10 +49,12 @@
                 "{{ModID}}_FireDebuffSpreadingRange": {
                     "Tiles": [
                         {
+                            "Id": "MainRange",
                             "Type": "Add",
                             "RelativeTo": "special",
                             "Rectangles": [
                                 {
+                                    "Id": "FullArea",
                                     "From": { "X": -2, "Y": -2 },
                                     "To": { "X": 2, "Y": 2 }
                                 }

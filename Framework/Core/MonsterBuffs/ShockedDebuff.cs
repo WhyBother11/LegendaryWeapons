@@ -28,7 +28,7 @@ public sealed class ShockedDebuff : MonsterBuff
         
         const float interval = 100f;
         const int animLength = 3;
-        var loops = Data!.Duration.ToMilliseconds() / (interval * animLength) + 1;
+        var loops = 999;
         var animation = new TextureTemporaryAnimatedSprite(
             texturePath: StunAnimationPath,
             sourceRect: new Rectangle(0, 0, 64, 64),

@@ -23,6 +23,12 @@
             "Action": "Load",
             "Target": "Mods/{{ModID}}/Animations/LightningProjectile",
             "FromFile": "assets/animations/lightning_projectile.png"
+        },
+        {
+            "LogName": "Test",
+            "Action": "Load",
+            "Target": "Mods/{{ModID}}/rope",
+            "FromFile": "assets/rope.png"
         }
     ]
 }

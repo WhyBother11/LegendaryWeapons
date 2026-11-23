@@ -7,9 +7,10 @@
             "Entries": {
                 "{{ModID}}_Mjolnir": {
                     "Abilities": "{{ModID}}_ThrowMjolnir {{ModID}}_MjolnirCallLightning",
-                    "ActionPoints": "{{ModID}}_MjolnirActionPoint {{ModID}}_MjolnirActionPointA {{ModID}}_MjolnirActionPointB {{ModID}}_MjolnirActionPointC {{ModID}}_MjolnirActionPointD {{ModID}}_MjolnirActionPointE",
+                    "ActionPoints": "{{ModID}}_MjolnirActionPoint",
                     "DamageTypes": [
                         {
+                            "Id": "ExtraLightningDamage",
                             "Type": "Lightning",
                             "MinDamage": 10,
                             "MaxDamage": 15
@@ -22,6 +23,7 @@
                     "ActionPoints": "{{ModID}}_MjolnirAwakenedActionPoint",
                     "DamageTypes": [
                         {
+                            "Id": "ExtraLightningDamage",
                             "Type": "Lightning",
                             "MinDamage": 25,
                             "MaxDamage": 30
@@ -44,6 +46,7 @@
                             "SpriteIndex": 5,
                             "DamageTypes": [
                                 {
+                                    "Id": "FormFireDamage",
                                     "Type": "Fire",
                                     "MinDamage": 30,
                                     "MaxDamage": 40
@@ -57,6 +60,7 @@
                             "SpriteIndex": 6,
                             "DamageTypes": [
                                 {
+                                    "Id": "FormIceDamage",
                                     "Type": "Ice",
                                     "MinDamage": 30,
                                     "MaxDamage": 40
@@ -70,6 +74,7 @@
                             "SpriteIndex": 7,
                             "DamageTypes": [
                                 {
+                                    "Id": "FormLightningDamage",
                                     "Type": "Lightning",
                                     "MinDamage": 30,
                                     "MaxDamage": 40

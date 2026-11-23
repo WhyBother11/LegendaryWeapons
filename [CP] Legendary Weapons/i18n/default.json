@@ -24,6 +24,10 @@
     "monster-buff.wet.description": "For 7.5 seconds affected enemy's Ice and Lightning resistances are reduced, Fire resistance is increased.",
     "monster-buff.burn.display-name": "Burn",
     "monster-buff.burn.description": "Affected enemy takes 2 Fire damage for each stack and each trigger has 5% chance to apply 1 stack Burn debuff on enemies in 3x3 area. Triggers every 0.75 seconds.",
+    "monster-buff.freeze.display-name": "Freeze",
+    "monster-buff.freeze.description": "Affected enemy has reduced speed for 10 seconds. Apply Freeze debuff two times to make enemy Frozen.",
+    "monster-buff.frozen.display-name": "Frozen",
+    "monster-buff.frozen.description": "Affected enemy cannot move and attack for 8 seconds. If enemy is struck with club, it is shattered and takes 40 Physical damage.",
     // abilities //
     "ability.mjolnir-awakened.summon-rain.display-name": "Summon Rain",
     "ability.mjolnir-awakened.summon-rain.description": "Summon rain to apply Wet on all enemies within range. Cooldown: 20 seconds.",

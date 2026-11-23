@@ -18,7 +18,10 @@
                     "Cooldown": 20,
                     "Texture": "Mods/{{ModID}}/abilities",
                     "SpriteIndex": 0,
-                    "HighlightRangeId": "{{ModID}}_SummonRainAbilityRange"
+                    "HighlightRangeId": "{{ModID}}_SummonRainAbilityRange",
+                    "ActionsOnTrigger": [
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Wet 1 {{ModID}}_SummonRainAbilityRange"
+                    ]
                 },
                 "{{ModID}}_ThrowMjolnir": {
                     "Type": "Throw",
@@ -47,7 +50,15 @@
                     "Cooldown": 0,
                     "Texture": "Mods/{{ModID}}/abilities",
                     "SpriteIndex": 7,
-                    "HighlightRangeId": "{{ModID}}_CallLightningRange"
+                    "HighlightRangeId": "{{ModID}}_CallLightningRange",
+                    "TriggerActionCondition": "WhyBother11.CombatExtended_ACTION_POINTS {{ModID}}_MjolnirAwakenedActionPoint 10",
+                    "ActionsOnTrigger": [
+                        "WhyBother11.CombatExtended_AddActionPoints {{ModID}}_MjolnirAwakenedActionPoint -10",
+                        "WhyBother11.CombatExtended_DamageMonster Lightning 40 50 {{ModID}}_CallLightningRange",
+                        "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 0.125 {{ModID}}_CallLightningRange",
+                        "WhyBother11.CombatExtended_LightningStrike {{ModID}}_CallLightningRange monster",
+                        "spacechase0.SpaceCore_PlaySound thunder true"
+                    ]
                 },
                 "{{ModID}}_MjolnirCallLightning": {
                     "Type": "Default",
@@ -56,7 +67,15 @@
                     "Cooldown": 0,
                     "Texture": "Mods/{{ModID}}/abilities",
                     "SpriteIndex": 7,
-                    "HighlightRangeId": "{{ModID}}_CallLightningRange"
+                    "HighlightRangeId": "{{ModID}}_CallLightningRange",
+                    "TriggerActionCondition": "WhyBother11.CombatExtended_ACTION_POINTS {{ModID}}_MjolnirActionPoint 10",
+                    "ActionsOnTrigger": [
+                        "WhyBother11.CombatExtended_AddActionPoints {{ModID}}_MjolnirActionPoint -10",
+                        "WhyBother11.CombatExtended_LightningStrike {{ModID}}_CallLightningRange monster",
+                        "WhyBother11.CombatExtended_DelayedAction 0.2 \"WhyBother11.CombatExtended_DamageMonster Lightning 40 50 {{ModID}}_CallLightningRange\"",
+                        "WhyBother11.CombatExtended_DelayedAction 0.2 \"WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 0.125 {{ModID}}_CallLightningRange\"",
+                        "WhyBother11.CombatExtended_DelayedAction 0.2 \"spacechase0.SpaceCore_PlaySound thunder true\""
+                    ]
                 },
                 "{{ModID}}_CrimsonDaggerUnleashed": {
                     "Type": "Continuous",
@@ -66,7 +85,13 @@
                     "Duration": "20",
                     "AttachedToWeapon": "false",
                     "Texture": "Mods/{{ModID}}/abilities",
-                    "SpriteIndex": 2
+                    "SpriteIndex": 2,
+                    "ActionsOnTrigger": [
+                        "WhyBother11.CombatExtended_ChangeBuffStackLimit {{ModID}}_CrimsonDaggerBuff -2"
+                    ],
+                    "ActionsOnEnd": [
+                        "WhyBother11.CombatExtended_ChangeBuffStackLimit {{ModID}}_CrimsonDaggerBuff 10"
+                    ]
                 },
                 "{{ModID}}_CrimsonDaggerUltimateUnleashed": {
                     "Type": "Continuous",
@@ -76,7 +101,13 @@
                     "Duration": "20",
                     "AttachedToWeapon": "false",
                     "Texture": "Mods/{{ModID}}/abilities",
-                    "SpriteIndex": 2
+                    "SpriteIndex": 2,
+                    "ActionsOnTrigger": [
+                        "WhyBother11.CombatExtended_ChangeBuffStackLimit {{ModID}}_CrimsonDaggerBuff -2"
+                    ],
+                    "ActionsOnEnd": [
+                        "WhyBother11.CombatExtended_ChangeBuffStackLimit {{ModID}}_CrimsonDaggerBuff 10"
+                    ]
                 },
                 "{{ModID}}_BleedingCuts": {
                     "Type": "Default",
@@ -92,7 +123,13 @@
                     "Description": "{{i18n:ability.activate-elemental-blade.description}}",
                     "Cooldown": 0,
                     "Texture": "Mods/{{ModID}}/abilities",
-                    "SpriteIndex": 3
+                    "SpriteIndex": 3,
+                    "ActionsOnTrigger": [
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ActivateElementalBladeForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_AddWeaponAbility {{ModID}}_ElementalBladeFireForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_AddWeaponAbility {{ModID}}_ElementalBladeIceForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_AddWeaponAbility {{ModID}}_ElementalBladeLightningForm {{ModID}}_ElementalBlade"
+                    ]
                 },
                 "{{ModID}}_ElementalBladeFireForm": {
                     "Type": "Continuous",
@@ -104,6 +141,11 @@
                     "SpriteIndex": 4,
                     "ContextTags": [
                         "elemental_blade_form"
+                    ],
+                    "ActionsOnTrigger": [
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeIceForm  {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeLightningForm  {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_SetWeaponState {{ModId}}_ElementalBlade FireForm"
                     ]
                 },
                 "{{ModID}}_ElementalBladeIceForm": {
@@ -111,11 +153,16 @@
                     "DisplayName": "{{i18n:ability.elemental-blade-ice-form.display-name}}",
                     "Description": "{{i18n:ability.elemental-blade-ice-form.description}}",
                     "Cooldown": 60,
-                    "Duration": 20,
+                    "Duration": 1000,
                     "Texture": "Mods/{{ModID}}/abilities",
                     "SpriteIndex": 5,
                     "ContextTags": [
                         "elemental_blade_form"
+                    ],
+                    "ActionsOnTrigger": [
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeFireForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeLightningForm {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_SetWeaponState {{ModId}}_ElementalBlade IceForm"
                     ]
                 },
                 "{{ModID}}_ElementalBladeLightningForm": {
@@ -128,6 +175,11 @@
                     "SpriteIndex": 6,
                     "ContextTags": [
                         "elemental_blade_form"
+                    ],
+                    "ActionsOnTrigger": [
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeFireForm  {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_RemoveWeaponAbility {{ModID}}_ElementalBladeIceForm  {{ModID}}_ElementalBlade",
+                        "WhyBother11.CombatExtended_SetWeaponState {{ModId}}_ElementalBlade LightningForm"
                     ]
                 }
             }

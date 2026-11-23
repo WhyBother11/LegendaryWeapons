@@ -22,7 +22,7 @@
                     "Actions": [
                         "spacechase0.SpaceCore_PlaySound thunder true",
                         "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 1",
-                        "WhyBother11.CombatExtended_LaunchProjectile {{ModID}}_LightningProjectile3 _closestMonster"
+                        "WhyBother11.CombatExtended_LaunchProjectileMonsterClosest {{ModID}}_LightningProjectile3 5 true"
                     ],
                     "MarkActionApplied": "false"
                 },
@@ -32,7 +32,7 @@
                     "Condition": "WhyBother11.CombatExtended_PROJECTILE_ID {{ModID}}_LightningProjectile1",
                     "Actions": [
                         "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 1",
-                        "WhyBother11.CombatExtended_LaunchProjectile {{ModID}}_LightningProjectile2 _closestMonster"
+                        "WhyBother11.CombatExtended_LaunchProjectileMonsterClosest {{ModID}}_LightningProjectile2 5 true"
                     ],
                     "MarkActionApplied": "false"
                 },
@@ -42,7 +42,7 @@
                     "Condition": "WhyBother11.CombatExtended_PROJECTILE_ID {{ModID}}_LightningProjectile2",
                     "Actions": [
                         "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 1",
-                        "WhyBother11.CombatExtended_LaunchProjectile {{ModID}}_LightningProjectile3 _closestMonster"
+                        "WhyBother11.CombatExtended_LaunchProjectileMonsterClosest {{ModID}}_LightningProjectile3 5 true"
                     ],
                     "MarkActionApplied": "false"
                 },
@@ -52,7 +52,7 @@
                     "Condition": "WhyBother11.CombatExtended_PROJECTILE_ID {{ModID}}_LightningProjectile3",
                     "Actions": [
                         "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 1",
-                        "WhyBother11.CombatExtended_LaunchProjectile {{ModID}}_LightningProjectile4 _closestMonster"
+                        "WhyBother11.CombatExtended_LaunchProjectileMonsterClosest {{ModID}}_LightningProjectile4 5 true"
                     ],
                     "MarkActionApplied": "false"
                 },
@@ -62,7 +62,7 @@
                     "Condition": "WhyBother11.CombatExtended_PROJECTILE_ID {{ModID}}_LightningProjectile4",
                     "Actions": [
                         "WhyBother11.CombatExtended_ApplyMonsterBuff {{ModID}}_Shocked 1",
-                        "WhyBother11.CombatExtended_LaunchProjectile {{ModID}}_LightningProjectile5 _closestMonster"
+                        "WhyBother11.CombatExtended_LaunchProjectileMonsterClosest {{ModID}}_LightningProjectile5 5 true"
                     ],
                     "MarkActionApplied": "false"
                 }
